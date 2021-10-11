@@ -4,12 +4,10 @@ name: CI
 
 # Controls when the workflow will run
 on:
-  # Triggers the workflow on push or pull request events but only for the main branch
-  on:
-    push:
-      branches: [ main ]
-      paths:
-        - 'test1/**'
+  push:
+    branches: [ main ]
+    paths:
+      - 'test1/**'
 
   pull_request:
     branches: [ main ]
